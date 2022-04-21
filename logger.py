@@ -1,8 +1,8 @@
-import datetime
+import datetime as dt
 import logging
 
 def initializeLogging(config):
-    now = datetime.now().strftime("%Y%m%d_%H%M%S")
+    now = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
     app_name = "myapp"
     log_filename = f"{app_name}_{now}.log"
     print(f'Writing logs to {log_filename}')
