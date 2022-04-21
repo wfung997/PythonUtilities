@@ -43,7 +43,7 @@ def menu():
     parser = argparse.ArgumentParser(description='Command line application example')
     parser.add_argument('-i','--in_fix', help='Input FIX log', type=argparse.FileType('r'), required=True)
     parser.add_argument('-o','--out_fix', help='Output FIX log. If default=None, print to screen ', default=None, required=False)
-    parser.add_argument('-s','--fix_sep', help='FIX tag/value separator', default="|", required=False)
+    parser.add_argument('-s','--fix_sep', help='Sparator between FIX tags', default="|", required=False)
     parser.add_argument('-tags','--tags', help='List of tags to extract, separeted by comma', default="11,54,48,22,38,52,60,40,44", required=False)
     args = vars(parser.parse_args())
     return args 
