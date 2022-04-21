@@ -1,2 +1,2 @@
 # utilities
-Miscellaneous small tools 
+Miscellaneous small python tools/codes
